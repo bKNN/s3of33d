@@ -5,7 +5,7 @@ description = ""
 location = "Bordeaux, FR"
 slug = ""
 tags = []
-title = "Doublez vos performances... Grâce à la rotation des Gifs !"
+title = "Doublez vos performances... Grâce à la rotation des Gifs ! old"
 type = "post"
 
 +++
