@@ -46,4 +46,32 @@ Et hop, il est possible de réduire la taille de la page en enregistrant une cop
 
 **GAIN INCROYABLE DE PLUS DE 90% D’ÉCONOMIE !**
 
+![](/uploads/magic.gif)
+
 ## Mais qu'en est-il réellement ?
+
+Un PUG qui bronze à l'endroit pèse **4,82 Mo** :
+
+![](/uploads/pug_hor.gif)
+
+Avec une rotation à 90 degrès, ce même GIF pèse : **4,84 Mo** :**![](/uploads/pug-ver.gif)**
+
+Cette fois-ci, le gain est bien moins frappant que lors du premier test. 
+
+**MAIS.... gain toutefois il y a !**
+
+Malheureusement, cette technique du fond des tiroirs est à double tranchants. Après des années de recherche (wallah, je le jure) et de test de divers GIFs. Elle possède une faiblesse...
+
+C'est une épée à double tranchant... 
+
+Par conséquent, comme au réveil, il ne faut jamais se précipiter pour tout faire pivoter.
+
+![](/uploads/ocean_hor.gif)
+
+![](/uploads/ocean_ver.gif)
+
+La rotation de ce fabuleux océan passe de **860 Ko** à **950 Ko**.
+
+La rotation n'est pas donc toujours une bonne idée.
+
+Pour approfondir cette découverte, nous allons récupérer tous les GIFS présent [d'une page](https://www.tumblr.com/search/l%27amour%20est%20dans%20le%20pr%C3%A9%20gif "d'une page") choisi au plus grand des hasards, et faire pivoter chaque GIF.
