@@ -73,3 +73,5 @@ La rotation de ce fabuleux océan passe de **860 Ko** à **950 Ko**.
 La rotation n'est pas donc toujours une bonne idée.
 
 Pour approfondir cette découverte, nous allons récupérer tous les GIFS présent [d'une page](https://www.tumblr.com/search/l%27amour%20est%20dans%20le%20pr%C3%A9%20gif "d'une page") choisi au plus grand des hasards, et faire pivoter chaque GIF.
+
+à suivre...
