@@ -1,10 +1,10 @@
 +++
-categories = ["", "V"]
-date = "2011-03-23"
-description = "dfadsfasdf"
-location = "Santa Fe, NM"
-slug = "dfa,mdn,fnmansd,"
-tags = ["xxx", "yyy", "ssss", "vvvvv"]
+categories = []
+date = "2018-11-12T23:00:00+00:00"
+description = ""
+location = "Bordeaux, FR"
+slug = ""
+tags = []
 title = "Doublez vos performances... Grâce à la rotation des Gifs !"
 type = "post"
 
