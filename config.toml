@@ -7,7 +7,7 @@ title = "HELLO GOOGLE 💖"
 # Enable Google Analytics by entering your tracking code
 # googleAnalytics = ""
 paginate = 50
-theme = "sublime"
+theme = "hugo"
 
 [permalinks]
 	post = "/:year/:month/:day/:slug"
