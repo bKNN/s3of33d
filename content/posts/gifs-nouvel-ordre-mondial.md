@@ -5,12 +5,10 @@ description = ""
 location = "Bordeaux, FR"
 slug = ""
 tags = []
-title = "Doublez vos performances... Grâce à la rotation des Gifs ! old"
+title = "Doublez vos performances... Grâce à la rotation des Gifs !"
 type = "post"
 
 +++
-# Doublez vos performances... Grâce à la rotation des Gifs !
-
 Nous sommes tous fans des gifs (et si ce n'est pas le cas, [CLIQUE ICI](https://www.baidu.com/)).
 
 Les GIFs c'est toujours drôle, même quand on commence à les analyser...
