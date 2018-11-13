@@ -26,7 +26,7 @@ Ces deux images sont à 100% identiques, une simple rotation à 90° à été ef
 
 ![](/uploads/jamy.jpg "MAIS DIS JAMY")
 
-**MAIS DIS JAMY, POURQUOI EST-CE LE CAS ?**
+### **MAIS DIS JAMY, POURQUOI EST-CE LE CAS ?**
 
     > Les fichiers GIF suivent un algorithme de compression qui supprime la redondance horizontale.
 
