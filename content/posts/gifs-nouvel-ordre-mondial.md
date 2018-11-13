@@ -9,19 +9,19 @@ title = "Doublez vos performances... Grâce à la rotation des Gifs ! old"
 type = "post"
 
 +++
-### **Introduction**
+# Doublez vos performances... Grâce à la rotation des Gifs !
 
 Nous sommes tous fans des gifs (et si ce n'est pas le cas, [CLIQUE ICI](https://www.baidu.com/)).
 
 Les GIFs c'est toujours drôle, même quand on commence à les analyser...
 
-Jetez un coups d’œil à ces deux beaux gradient au format GIF : 
+Jetez un coups d’œil à ces deux beaux gradient au format GIF :
 
 ![](/uploads/gradient-hor.gif)
 
 ![](/uploads/gradient-hor.gif)
 
-Ces deux images sont à 100% identiques, une simple rotation à 90° à été effectué... et pourtant : 
+Ces deux images sont à 100% identiques, une simple rotation à 90° à été effectué... et pourtant :
 
 * Le gradient vertical pèse **281 Ko**
 * Le gradient horizontal pèse **28 Ko**
@@ -34,4 +34,16 @@ Ces deux images sont à 100% identiques, une simple rotation à 90° à été ef
 
 [Designing for Performance](http://designingforperformance.com/optimizing-images/#gif)
 
-Ainsi, chaque GIF à une taille radicalement différentes, car son format offre une compression nettement meilleure dans un sens. 
+Ainsi, chaque GIF à une taille radicalement différentes, car son format offre une compression nettement meilleure dans un sens.
+
+Après cette fabuleuse découverte, pourquoi ne pas s'amuser à penser performance web avec un pro-tips sorti tout droit du futur. 
+
+**MERCI LE CSS <3**
+
+    <img src = "horizontal.gif" style = "transformation: rotate (90deg);" />
+
+Et hop, il est possible de réduire la taille de la page en enregistrant une copie d'un fichier GIF pivoté à 90° puis le refaire pivoter grâce au CSS à son état d'origine.
+
+**GAIN INCROYABLE DE PLUS DE 90% D’ÉCONOMIE !**
+
+## Mais qu'en est-il réellement ?
