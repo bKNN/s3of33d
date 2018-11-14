@@ -34,4 +34,16 @@ Voici donc notre belle TO-DO LIST :
 4. Redirection des PDF d'origine vers la nouvelle URL
 5. Faire un blocage robot.txt des fichiers .pdf
 
+De nombreux sites web proposent la conversion de PDF à HTML.
+
+Comme d'habitude, j'ai un préférence pour les outils utilisable en local, moins intruisif et permet souvent l'automatisation de process (la convertion par lots par exemple).
+
+## pdf2htmlEX
+
+[pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX "pdf2htmlEX") est un projet githut, utilitaire en ligne de commande multiplateforme totalement grauit qui permet une conversion presque parfaite.
+
+Tous les PDF cobayes sélectionné sont des guides trouvé sur le darknet pour quelques bitcoins. 
+
+_en cours de rédaction..._
+
 _624b4e_
