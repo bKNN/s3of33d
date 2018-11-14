@@ -129,6 +129,6 @@ Si votre site Web possède donc de beau gradient en GIF (ce qui je suppose n'est
 
 ![](/uploads/donald-Make-Web-Development-Great-Again-crowd.png)
 
-Si l'article vous à plus ou vous à fait sourire, n'hésitez pas à le partager (même à ta grand-mère) et gardon espoir mes frères, **un jour la rotation de GIFS sera reconnu comme Qualité web chez OPQUAST !** 
+Si l'article vous à plus ou vous à fait sourire, n'hésitez pas à le partager (même à ta grand-mère) et gardon espoir mes frères, **un jour la rotation de GIFS sera reconnue comme Qualité web chez OPQUAST !**
 
 _624b4e_
