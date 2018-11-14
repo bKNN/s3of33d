@@ -1,12 +1,12 @@
 {
-  "name": "<your-apps-name>",
-  "short_name": "<your-apps-shortname>",
+  "name": "YOOOOOOOOLOOOOOOOOOO",
+  "short_name": "YOLO",
   "icons": [{
     "src": "/static/favicons/favicon.png",
     "sizes": "128x128",
     "type": "image/png"
   }],
-  "start_url": "/index.html",
+  "start_url": "/layouts/offline/single.html",
   "display": "standalone",
   "orientation" : "portrait",
   "background_color": "#000000",

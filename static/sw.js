@@ -1,27 +1,26 @@
 const CACHE_VERSION = 1;
 
 const BASE_CACHE_FILES = [
-    '/style.css',
-    '/script.js',
-    '/search.json',
+    '/static/static/css/main.css',
+    '/static/static/js/main.js',
     '/manifest.json',
-    '/favicon.png',
+    '/static/favicons/favicon.png',
 ];
 
 const OFFLINE_CACHE_FILES = [
     '/style.css',
     '/script.js',
-    '/offline/index.html',
+    '/layouts/offline/single.html',
 ];
 
 const NOT_FOUND_CACHE_FILES = [
-    '/style.css',
-    '/script.js',
-    '/404.html',
+    '/static/static/css/main.css',
+    '/static/static/js/main.js',
+    '/layouts/404.html',
 ];
 
-const OFFLINE_PAGE = '/offline/index.html';
-const NOT_FOUND_PAGE = '/404.html';
+const OFFLINE_PAGE = '/layouts/offline/single.html';
+const NOT_FOUND_PAGE = '/layouts/404.html';
 
 const CACHE_VERSIONS = {
     assets: 'assets-v' + CACHE_VERSION,
