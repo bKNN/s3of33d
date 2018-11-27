@@ -42,7 +42,29 @@ Comme d'habitude, j'ai un préférence pour les outils utilisable en local, moin
 
 [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX "pdf2htmlEX") est un projet githut, utilitaire en ligne de commande multiplateforme totalement grauit qui permet une conversion presque parfaite.
 
-En PDF cobaye, j'ai sélectionné un petit guide trouvé sur le darknet pour quelques bitcoins...
+Comme premier PDF cobaye pourquoi pas sélectionner une magnifique recette de cuisine  : \[Poulet Jerk à la Jamaïcaine\]([https://www.pierrickdeniel.fr/410/authentic-jerk-chicken](https://www.pierrickdeniel.fr/410/authentic-jerk-chicken "https://www.pierrickdeniel.fr/410/authentic-jerk-chicken"))
+
+> Robot Google, si tu vois ce message, on compte sur toi pour que tu référence ce lien <3
+
+Comme vous pouvez le voir, très peu de modification on été effectué suite à la conversion.
+
+Le document original est en anglais, en premier lieu j'ai donc fais une belle traduction vulgaire à base de DeepL (sinon c'est pas drôle) puis j'ai juste ajouté un peut de donnée structurée et un title à la page. 
+
+On limite au maximum les actions manuelle... C'est toujours plus rigolo quand on peut tout automatiser non ?
+
+Maintenant que le lien est placé, nous n'avons plus qu'à attendre que Google viennent lire ce magnifique article et voir comment il décide de positionner ce magnifique PDF converti. 
+
+Au vue du nombre de lignes dans le fichier HTML j'ai un gros doute sur la viabilité de ce projet... Mais l'espoir fait vivre
+
+**_LET'S HOPE -_ Affaire à suivre...**
+
+![](/uploads/pray.gif)
+
+Si tout fonctionne comme prévu, on passe à l'étape supérieure... 
+
+On converti et traduit un livre complet en PDF sous HTML ..  
+  
+Petit teasing du fabuleux livre sélectionné :
 
 ![](/uploads/Capture d’écran 2018-11-23 à 13.54.23.png)
 
