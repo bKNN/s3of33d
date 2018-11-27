@@ -18,7 +18,7 @@ Googlebot est capable de les indexer, mais il est difficile de faire un suivi co
 
 **Pourquoi on s'amuserai pas à traduire directement ces fichiers au format HTML ?**
 
-Avant de commencer à lire le post, sachez que ceci est une expérimentation, je n'ai à l'heure actuelle aucune idée du résultat. Le thread risque d'ailleurs d'évoluer au fil du temps et des évolutions observées. 
+Avant de commencer à lire le post, sachez que ceci est une expérimentation, je n'ai à l'heure actuelle aucune idée du résultat. Le thread risque d'ailleurs d'évoluer au fil du temps et des évolutions observées.
 
 _Ce n'est donc pour le moment pas une stratégie de ranking viable._
 
@@ -42,7 +42,9 @@ Comme d'habitude, j'ai un préférence pour les outils utilisable en local, moin
 
 [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX "pdf2htmlEX") est un projet githut, utilitaire en ligne de commande multiplateforme totalement grauit qui permet une conversion presque parfaite.
 
-Tous les PDF cobayes sélectionné sont des guides trouvé sur le darknet pour quelques bitcoins. 
+En PDF cobaye, j'ai sélectionné un petit guide trouvé sur le darknet pour quelques bitcoins...
+
+![](/uploads/Capture d’écran 2018-11-23 à 13.54.23.png)
 
 _en cours de rédaction..._
 

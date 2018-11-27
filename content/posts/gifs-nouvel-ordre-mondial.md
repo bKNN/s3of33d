@@ -17,7 +17,7 @@ Jetez un coups d’œil à ces deux beaux gradient au format GIF :
 
 ![](/uploads/gradient-hor.gif)
 
-![](/uploads/gradient-hor.gif)
+![](/uploads/gradient-ver.gif)
 
 Ces deux images sont à 100% identiques, une simple rotation à 90° à été effectué... et pourtant :
 
