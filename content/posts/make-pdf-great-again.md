@@ -42,7 +42,7 @@ Comme d'habitude, j'ai un préférence pour les outils utilisable en local, moin
 
 [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX "pdf2htmlEX") est un projet githut, utilitaire en ligne de commande multiplateforme totalement grauit qui permet une conversion presque parfaite.
 
-Comme premier PDF cobaye pourquoi pas sélectionner une magnifique recette de cuisine  : \[Poulet Jerk à la Jamaïcaine\]([https://www.pierrickdeniel.fr/410/authentic-jerk-chicken](https://www.pierrickdeniel.fr/410/authentic-jerk-chicken "https://www.pierrickdeniel.fr/410/authentic-jerk-chicken"))
+Comme premier PDF cobaye pourquoi pas sélectionner une magnifique recette de cuisine  : [Poulet Jerk à la Jamaïcaine](https://www.pierrickdeniel.fr/410/authentic-jerk-chicken "Poulet Jerk à la Jamaïcaine")
 
     Robot Google, si tu vois ce message, on compte sur toi pour que tu référence ce lien <3
 
