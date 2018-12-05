@@ -9,7 +9,7 @@ title = "Comment visiter un profil LinkedIn de manière anonyme ?"
 type = "post"
 
 +++
-Tout bon webmarketeur qui se respecte n'a qu'une seule envie : harceler les gens ! Mais si possible dans le plus grand anonymat.
+Dans nos métiers nous voulons tous harceler les gens, c'est bien connu ! Mais si possible dans le plus grand anonymat.
 
 Et nous savons tous que LinkedIn est un grand ennemie puisqu'il nous incite à nous connecter à chaque occasion.
 
