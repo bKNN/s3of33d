@@ -1,6 +1,6 @@
 +++
 categories = []
-date = "2018-11-13T23:00:00+00:00"
+date = "2018-12-04T23:00:00+00:00"
 description = ""
 location = "Bordeaux, FR"
 slug = ""
@@ -9,9 +9,11 @@ title = "Comment visiter un profil LinkedIn de manière anonyme ?"
 type = "post"
 
 +++
+![](/uploads/linkedin.PNG)
+
 Dans nos métiers nous voulons tous harceler les gens, c'est bien connu ! Mais si possible dans le plus grand anonymat.
 
-Et nous savons tous que LinkedIn est un grand ennemie puisqu'il nous incite à nous connecter à chaque occasion.
+Et nous savons tous que LinkedIn est un grand ennemie puisqu’il nous incite à nous connecter à chaque occasion.  
 
 ![](/uploads/asshole.gif)
 
