@@ -13,6 +13,8 @@ Dans nos métiers nous voulons tous harceler les gens, c'est bien connu ! Mais s
 
 Et nous savons tous que LinkedIn est un grand ennemie puisqu'il nous incite à nous connecter à chaque occasion.
 
+![](/uploads/asshole.gif)
+
 Il existe de nombreuses méthodes en ligne pour consulter les profilts Linkedin de manière anonyme ou sans compte. Mais la plupart des sites proposent tous la même technique :
 
 * Utiliser une feuille de style pour remplacer le CSS (ne fonctionne plus - RIP)
