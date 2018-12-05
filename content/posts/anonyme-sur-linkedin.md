@@ -13,7 +13,7 @@ type = "post"
 
 Dans nos métiers nous voulons tous harceler les gens, c'est bien connu ! Mais si possible dans le plus grand anonymat.
 
-Et nous savons tous que LinkedIn est un grand ennemie puisqu’il nous incite à nous connecter à chaque occasion.  
+Et nous savons tous que LinkedIn est un grand ennemie puisqu’il nous incite à nous connecter à chaque occasion.
 
 ![](/uploads/asshole.gif)
 
@@ -21,7 +21,7 @@ Il existe de nombreuses méthodes en ligne pour consulter les profilts Linkedin 
 
 * Utiliser une feuille de style pour remplacer le CSS (ne fonctionne plus - RIP)
 * Tout de même obliger de posséder un compte
-* Et dieu sait où va vos données 
+* Et dieu sait où va vos données
 
 ![](/uploads/watching-you.gif)
 
@@ -35,15 +35,15 @@ La méthode que nous allons voir permet d'afficher les pages de profil Linkedin 
 
 _Si vous connaissez pas encore Joe Veix..._ [_Cliquez ICI_](https://theoutline.com/post/5495/how-to-beat-linked-in-the-game)
 
-2. Ouvrir le test d'optimisation mobile de Google - c'est toujours notre meilleur pote ! Puis collez l'URL
+1. Ouvrir le [test d'optimisation mobile de Google](https://search.google.com/test/mobile-friendly "test d'optimisation mobile de Google") - c'est toujours notre meilleur pote ! Puis collez l'URL
 
 ![](/uploads/test_opti_mobile.PNG)
 
-3. Ouvrez l'onglet HTML et copiez le code.
+1. Ouvrez l'onglet HTML et copiez le code.
 
 ![](/uploads/copy.png)
 
-4. Collez le code dans une visionneuse HTML en ligne tel que [codepen.io]()
+1. Collez le code dans une visionneuse HTML en ligne tel que [codepen.io](https://codepen.io/pen/ "codepen.io")
 
 ![](/uploads/linkedin_profile.PNG)
 
