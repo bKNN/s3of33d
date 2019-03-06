@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://upbeat-dijkstra-aff090.netlify.com/* https://pierrick.dev/:splat 301!
