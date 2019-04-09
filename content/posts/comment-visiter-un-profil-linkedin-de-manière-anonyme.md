@@ -46,7 +46,7 @@ Ces systèmes facilitent la mise en oeuvre en permettant d'ajouter simplement un
 
 Toutefois, ils ne sont pas gratuit et nécessitent de l'engagement pour la mise en oeuvre et l'utilisation. Ce qui dans notre cas n'est pas forcément nécessaire lorsque l'on souhaite uniquement obtenir des étoiles dans les SERP pour notre local businesses.
 
-### Option 2 : On se construit son propre système de notation 
+### Option 2 : On se construit son propre système de notation
 
 Avec de la motivation, on se rends compte qu'il est assez simple de construire un système de notation de base pour son site web en respectant l'essentiel des directives de Google.
 
@@ -54,11 +54,11 @@ Dans notre cas, nous allons illustrer une mise en en place sur le CMS Wordpress,
 
 #### Etape 1
 
-Créer une page témoignages, avis sur votre site web et complétez là par des commentaires de clients. 
+Créer une page témoignages, avis sur votre site web et complétez là par des commentaires de clients.
 
-Ces commentaires peuvent être fictif, en statique, aucun soucis là dessus. 
+Ces commentaires peuvent être fictif, en statique, aucun soucis là dessus.
 
-Pour intégrer rapidement des étoiles depuis Wordpress voici un plugin vraiment pratique : [Universal Star Rating](https://en-ca.wordpress.org/plugins/universal-star-rating/). 
+Pour intégrer rapidement des étoiles depuis Wordpress voici un plugin vraiment pratique : [Universal Star Rating](https://en-ca.wordpress.org/plugins/universal-star-rating/).
 
 Faites bien attention lors du choix d'autres plugins. Beaucoup d'entre eux injectent directement leurs propre schéma dans le site de manière rarement optimisées.
 
@@ -114,7 +114,7 @@ On peut envelopper les Review avec le schéma LocalBusiness (ou une option plus 
 
 Voici le lien [schema.org pour plus de précision sur toutes les propriétés](https://schema.org/LocalBusiness).
 
-##### Tout rassembler
+#### Tout rassembler
 
 Voici un exemple pour un vendeur de voiture, on retrouve uniquement 2 commentaires dans cet exemple, mais l'extrait de code reste identique, quelque soit le nombre d'avis que vous avez sur la page :
 
@@ -179,12 +179,12 @@ Ajoutez le balisage dans l'en-tête <head> du site.
 
 Depuis Wordpress il est possible d'utiliser un plugin [Per page add to head](https://wordpress.org/plugins/per-page-add-to/). Cela permet d'ajouter facilement le JSON-LD sur n'importe qu'elle page, mais il existe d’innombrables autres moyens pour y parvenir.
 
-Dans tous les cas ! 
+Dans tous les cas !
 
 **Pensez bien à utiliser l'**[**outil de test de données structurées**]() **proposé par Google pour vérifier les implémentations.**  
 N'ignorez jamais les avertissements, et corrigez absolument les erreurs éventuelles !
 
-### Etape 3
+#### Etape 3
 
 Ajoutez un formulaire du type : "Laissez un commentaire" quelque part sur la page Témoignages.
 
