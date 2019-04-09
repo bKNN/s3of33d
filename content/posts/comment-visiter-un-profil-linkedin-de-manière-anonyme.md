@@ -1,32 +1,41 @@
 +++
 categories = []
-date = "2018-12-04T23:00:00+00:00"
+date = "2019-04-05T22:00:00+00:00"
 description = ""
 draft = true
 location = "Bordeaux, FR"
 slug = ""
 tags = []
-title = "Comment visiter un profil LinkedIn de manière anonyme ?"
+title = "Boostez vos avis Local Businesses avec aggregateRating de schema.org"
 type = "post"
 
 +++
-![](/uploads/linkedin.PNG)
+Les rich snippets sont toujours complexe à mettre en place. En particulier pour les entreprises locales, où les informations manque encore de clarté.
 
-Dans nos métiers nous voulons tous harceler les gens, c'est bien connu ! Mais si possible dans le plus grand anonymat.
+On se retrouve vite perdu sur... qu'elles règles utiliser, comment les déclencher et comment les mettre en oeuvre.
 
-Et nous savons tous que LinkedIn est un grand ennemie puisqu’il nous incite à nous connecter à chaque occasion.
+![](/uploads/Capture.PNG)
 
-![](/uploads/asshole.gif)
+Schema.org, et l'interprétation par Google de ces microdonnées ne cessent d'évoluer continuellement, et complexifie la tâche pour nous SEO.
 
-Il existe de nombreuses méthodes en ligne pour consulter les profilts Linkedin de manière anonyme ou sans compte. Mais la plupart des sites proposent tous la même technique :
+Au début, il était bien entendu possible de mettre sur tous nos sites 5 étoiles en ajoutant simplement le balisage aggregateRating et d'en abuser à outrance. 
 
-* Utiliser une feuille de style pour remplacer le CSS (ne fonctionne plus - RIP)
-* Tout de même obliger de posséder un compte
-* Et dieu sait où va vos données
+Google c'est depuis réveillé, et cette approche se retrouve de moins en moins recommandé car très proche du contenu spammy que Google peut potentiellement pénaliser du jour au lendemain.
 
-![](/uploads/watching-you.gif)
+## Des règles à suivre :
 
-La méthode que nous allons voir permet d'afficher les pages de profil Linkedin sans posséder de compte et ce de manière 100% anonyme. Vos données restent chez vous et intactes (c'est donc RGPD friendly).
+* Ne jamais mettre de aggregateRating sur la page d'accueil (risque d'envoyer un fort signal de spam auprès de Google).
+* aggregateRating doit représenter des avis réels, visible depuis le site.
+* Si la page n'affiche pas d'avis, alors n'y intégrez pas le schema aggregateRating. Dans tous les cas, la page doit avoir une notation ainsi que les avis clairement identifiable ou un lien vers la page où les avis sont visible.
+* Les avis doivent provenir de votre site (on ne prends pas les avis Google, Yelp, Tripadvisor...)
+
+Dernier point, valable pour toutes les pages, pour qu'une page déclenche des étoiles dans les SERP, elle doit avoir une certaine autorité
+
+Ces règles sont basé et interprété depuis les Google [Guidelines for review snippets](https://developers.google.com/search/docs/data-types/review-snippet#review-snippet-guidelines)
+
+## Comment maximiser les chances ?
+
+En gardant à l'esprit les paramètres ci-dessus, il existe plusieurs façons d'appliquer des avis sur votre site tout en maximisant les chances d'obtenir les étoiles dans les SERPs
 
 # Comment afficher les profils LinkedIn sans compte ?
 
