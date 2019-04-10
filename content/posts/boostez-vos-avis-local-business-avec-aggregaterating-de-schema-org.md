@@ -4,9 +4,9 @@ date = "2019-04-05T22:00:00+00:00"
 description = ""
 draft = true
 location = "Bordeaux, FR"
-slug = "localbusiness-et-agregaterating-microdata"
+slug = "bypass-search-console"
 tags = []
-title = "Boostez vos avis Local Business avec aggregateRating de schema.org"
+title = "Bypass la Search Cosole avec des URLs externes"
 type = "post"
 
 +++
