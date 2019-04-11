@@ -25,7 +25,7 @@ Mais il existe une astuce...
 
 ![](/uploads/god.jpeg)
 
-Par exemple, pourquoi pas analyser la homepage de la Corée du Nord, afin de les aider à quelques reco SEO : 
+Par exemple, pourquoi pas analyser la homepage de la Corée du Nord, afin de les aider à quelques reco SEO :
 
 ![](/uploads/north-korea.PNG)
 
@@ -80,7 +80,7 @@ Cette technique est potentiellement utiles pour les devis avant audit, car elle 
 
 C'est un excellent moyen de voir rapidement si des problèmes de ressources sont bloqués et de commencer à auditer en attendant d'avoir les accès complet à la Search Console.
 
-Et d'autres détournement sont encore possible grâce à cette technique... Rappelez vous que vous utilisez par conséquent l'adresse IP authentique Google, donc vous aurez accès au même contenu que les robots Google, sans filtrage, quelques idées : 
+Et d'autres détournement sont encore possible grâce à cette technique... Rappelez vous que vous utilisez par conséquent l'adresse IP authentique Google, donc vous aurez accès au même contenu que les robots Google, sans filtrage, quelques idées :
 
 * Contournement des paywalls (hello les sites d'actu)
 * Vérifier sur un concurrent fait du cloacking
@@ -89,3 +89,5 @@ Et d'autres détournement sont encore possible grâce à cette technique... Rapp
 Et je suis persuadé que vous trouverez d'autres idées sur la façon de l'utiliser... profitez tant que rien n'est bloqué !
 
 Stay Safe.
+
+_624b4e_
