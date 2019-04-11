@@ -5,7 +5,7 @@ description = ""
 location = "Bordeaux, FR"
 slug = "bypass-search-console"
 tags = []
-title = "Bypass la Search Cosole avec des URLs externes"
+title = "Bypass la Search Console avec des URLs externes"
 type = "post"
 
 +++
