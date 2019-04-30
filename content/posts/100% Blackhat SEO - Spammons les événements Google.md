@@ -2,7 +2,6 @@
 categories = []
 date = "2019-04-16T22:00:00+00:00"
 description = ""
-draft = true
 location = "Bordeaux, FR"
 slug = "blackhat-seo-google-evenements"
 tags = []
