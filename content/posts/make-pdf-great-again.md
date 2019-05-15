@@ -40,7 +40,7 @@ Comme d'habitude, j'ai un préférence pour les outils utilisable en local, moin
 
 ## pdf2htmlEX
 
-[pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX "pdf2htmlEX") est un projet githut, utilitaire en ligne de commande multiplateforme totalement grauit qui permet une conversion presque parfaite.
+[pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX "pdf2htmlEX") est un projet githut, utilitaire en ligne de commande multiplateforme totalement gratuit qui permet une conversion presque parfaite.
 
 Comme premier PDF cobaye pourquoi pas sélectionner une magnifique recette de cuisine  : [Poulet Jerk à la Jamaïcaine](https://test.pierrick.dev/410/authentic-jerk-chicken "Poulet Jerk à la Jamaïcaine")
 
@@ -50,7 +50,15 @@ Comme vous pouvez le voir, très peu de modification on été effectué suite à
 
 Le document original est en anglais, en premier lieu j'ai donc fais une belle traduction vulgaire à base de DeepL (sinon c'est pas drôle) puis j'ai juste ajouté un peut de donnée structurée et un title à la page.
 
-On limite au maximum les actions manuelle... C'est toujours plus rigolo quand on peut tout automatiser non ?
+Comme vous pouvez le voir, le rendu est une vrai bouilli pour le moteur...
+
+![](/uploads/code-source.PNG)
+
+Même W3C ne veut pas à en entendre parler :
+
+![](/uploads/W3C.PNG)
+
+Mais volontairement, on ne va faire aucune modification du code HTML. On limite au maximum les actions manuelle... C'est toujours plus rigolo quand on peut tout automatiser non ?
 
 Maintenant que le lien est placé, nous n'avons plus qu'à attendre que Google viennent lire ce magnifique article et voir comment il décide de positionner ce magnifique PDF converti.
 
@@ -60,14 +68,34 @@ Au vue du nombre de lignes dans le fichier HTML j'ai un gros doute sur la viabil
 
 ![](/uploads/pray.gif)
 
-Si tout fonctionne comme prévu, on passe à l'étape supérieure...
+## Update du 24/04
 
-On converti et traduit un livre complet en PDF sous HTML ..
+OK J'AURAIS PU ME RÉVEILLER PLUS TÔT !
 
-Petit teasing du fabuleux livre sélectionné :
+![](/uploads/buzy.png)
 
-![](/uploads/Capture d’écran 2018-11-23 à 13.54.23.png)
+Mais je vous jure, j'étais trop occupé !
 
-_en cours de rédaction..._
+L'URL est aujourd'hui "bien" indexé.  Bien entre guillemet car en voulant faire le moins de correctif possible, des erreurs d'encodage ce sont ajouté et tous les accents de la balise title et de la metadescription ont sauté (triste vie :'( ).
+
+![](/uploads/Capture-2.PNG)
+
+Je viens donc d'apporter un léger correctif afin de vérifier si la page est capable maintenant de ranker sur des mots clés potentiellement intéressant : "Jerk au poulet", "Jerk au poulet Jamaicain", "Authentique Jerk au poulet"...
+
+En parlant de "Authentique Jerk au poulet"... On est déjà dessus, même avec tous nos erreurs d'accents et la bouillabaisse de code HTML proposé au robot... il arrive quand même à nous placer aux côtés de cuisineaz.com !  
+
+![](/uploads/Capture-3.PNG)
+
+Si vous avez l’œil vous pouvez voir aussi que mon schema.org est complètement pété. Lui aussi avais le soucis d'accents... Le correctif vient d'être fait ! 
+
+Autre fait intéressant, quand on regarde le cache Google nous pouvons voir que Google est "incapable" d'afficher de manière structuré notre page, pourtant la version texte seule est bien identifié et prise en compte.
+
+![](/uploads/Cache.PNG)
+
+**Théorie du complot :** GoogleBot alloue une certaine quantité de ressource pour chaque rendu de page. L'affichage de la version intégrale coûte donc des ressources. Ainsi Google n'utilise pas forcément à chaque fois toutes les fonctionnalités d'extraction et de rendu du code. Cela coûterai sans doute bien trop cher. 
+
+Le code de notre PDF est bien trop obscur par conséquent pour le robot afin qu'il puisse être analysé avec les ressources standard qui lui sont allouées.
+
+**Affaire toujours à suivre...**
 
 _624b4e_
