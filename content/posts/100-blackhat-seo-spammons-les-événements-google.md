@@ -13,6 +13,8 @@ On sait depuis quelques temps que les hackers se servent d'une multitude de comb
 
 Sur Github, il est toujours possible de trouver des milliers de clés API de divers services, exposées publiquement. Les développeurs, manquant souvent de notions de cyber-sécurité et prenant rarement le temps d'auditer le code. Ils ne réalisent pas forcément à quel point il est facile de les découvrir.
 
+![](https://media.giphy.com/media/YQitE4YNQNahy/giphy-downsized-large.gif)
+
 Mais comment les hackers s'y prennent t-ils ?
 
 ## Les mots apparentés : une aide pour trouver les clés API
@@ -90,7 +92,7 @@ Par exemple, le SDK AWS propose quelques bonnes idées:
 
 J'espère que cet article vous responsabilisera et vous aidera à éviter ces risques de sécurité à l'avenir.
 
-Pour les autres... attention à l'utilisation que vous en faites ! 
+Pour les autres... attention à l'utilisation que vous en faites !
 
 _XOXO!_
 
