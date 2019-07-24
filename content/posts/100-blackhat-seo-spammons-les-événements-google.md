@@ -2,7 +2,6 @@
 categories = []
 date = "2019-07-23T22:00:00+00:00"
 description = ""
-draft = true
 location = "Bordeaux, FR"
 slug = "merci-github-pour-les-cles"
 tags = []
