@@ -10,90 +10,89 @@ title = "Déterminez vos pages utiles et inutiles à l'aide de la dataviz"
 type = "post"
 
 +++
-On sait depuis quelques temps que les hackers se servent d'une multitude de combinaison afin de trouver des clés API, normalement secrètes et privés, de manière gratuite, et facile sur le web (les search tricks Google, pastebin, github...). Et ces "failles" peuvent parfois causer de [graves dommages](http://vertis.io/2013/12/16/unauthorised-litecoin-mining.html). Mais toujours en 2019, personne ne s'en inquiète réellement.
+Dans ce billet, nous allons voir ensemble comment déterminer facilement et rapidement le ratio de pages  utiles / inutiles lors d'un crawl. Nous allons en profiter pour faire une courte introduction sur la data visualisation, et son intérêt déjà évident dans le monde du SEO.
 
-Sur Github, il est toujours possible de trouver des milliers de clés API de divers services, exposées publiquement. Les développeurs, manquant souvent de notions de cyber-sécurité et prenant rarement le temps d'auditer le code. Ils ne réalisent pas forcément à quel point il est facile de les découvrir.
+L'identification des pages utiles et inutiles peut se faire à partir de différentes sources :
 
-![](https://media.giphy.com/media/YQitE4YNQNahy/giphy-downsized-large.gif)
+* Logs
+* Crawl
+* Sitemaps
+* Données Search Console
+* Données Analytics
 
-Mais comment les hackers s'y prennent t-ils ?
+Et c'est en croisant ces ensemble de données que nous pouvons observer des défauts évidant ou non en fonction des sites observées.
 
-## Les mots apparentés : une aide pour trouver les clés API
+Quelques pré-requis sont obligatoire :
 
-Github possède une fonction de recherche. Et le moyen le plus simplet et le plus rapide afin de trouver une clés API consiste à l'utiliser.
+* [Sitebulb](https://sitebulb.com/) ou n'importe quel crawler capable d'identifier et segmenter la source de vos URLs (trouvées dans GA ? GSC ? Au crawl ? dans le sitemap ?)
+* Un accès Search Console / Analytics pour câbler le crawler
+* [Anaconda](https://www.anaconda.com/distribution/#download-section) avec JupyterLab
+* Le package [mattplotlib-venn](https://anaconda.org/conda-forge/matplotlib-venn) pour faire de beau diagramme de Venn
 
-L'astuce consiste à penser à une chaîne qui se trouve généralement près de la chaîne de la clé API elle-même.
+## Exporter et trier les données Sitebulb
 
-Afin d'éviter de risquer de compromettre tout projet récent, aucune astuce clé en main vous sera dévoiler pour des tools moderne. Place à votre réflexion...
+Attention à ne pas oublier de câbler Analytics et la Search Console lors du crawl. On demande aussi l'exploration des sitemaps.
 
-Mais prenons un exemple outdated :
+Une fois le crawl terminé, allez dans URL Explorer et ajoutez les colonnes suivantes :
 
-Prenons une [Class PHP](https://github.com/tpyo/amazon-s3-php-class) pour accéder à AWS S3.
+![](/uploads/sitebulb-data-explorer.JPG)
 
-On peut supposer que bon nombre de développeurs qui utilisent cette classe ne pensent pas forcément à changer le nom de la variable qui contient la clé secrète API de celle utilisé dans l'exemple du Git.
+Ensuite, filtrez uniquement vos URLs interne et accessible (Status code 200)
 
-Bingo, une recherche sur "**$awsAccessKey**" nous donne plus de 50 000 résultats...
+Une fois le tableau mis à jour, exportez vos données.
 
-![](/uploads/awsaccesskey.JPG)
+Avec la limite d'export d'URL de GSC en règle générale je fusionne la colonne "Found in Google Analytics" avec "Found in Google Search Analytics".
 
-Juteux et facile n'est ce pas ?
+Mon tableau prêt à être travaillé, je me retrouve donc avec 3 colonnes :
 
-En réalité, même une recherche simplement sur "**aws secret**", donne des résultats déjà intéressants.
+![](/uploads/excel.JPG)
 
-Bien entendu AWS n'est pas le seul service pour lequel il est facile de rechercher une clés secrète.
+Place maintenant au jus de cerveau, l'objectif est maintenant de trier correctement l'ensemble des URL afin d'arriver à récupérer 7 valeurs clés :
 
-En soit, n'importe quel service proposant une API est exploitable.
+* **URLs absentes des sitemaps et inactives** : accessible au crawl mais absente des sitemaps et non visible sur GA et GSC
+* **URLs  absentes des sitemaps et actives** : accessible au crawl, présent dans GSC ou GA et absente des sitemaps
+* **URLs trouvées dans les sitemaps et inactives** : absente du crawl, non visible sur GA et GSC mais trouvé dans les sitemaps
+* **URLs trouvées dans les sitemaps et actives** : absente du crawl, visible sur GA ou GSC et trouvé dans les sitemaps
+* **URLS inactives** : accessible au crawl et trouvé dans les sitemaps mais non visible sur GA et GSC
+* **URLs totalement orphelines et inactives** : visible uniquement sur GA ou GSC
+* **URLs OK** : visible GA ou GSC, accessible au crawl et présent dans les sitemaps.
 
-Il suffit d'identifier le service, et réfléchir aux mots qui peuvent accompagner la clé API.
+A vous de trouver la technique la plus simple afin d'arriver à ce tableau final :
 
-Un autre petit exemple avec Stripe :
+![](/uploads/excel-2.JPG)
 
-![](/uploads/Stripe.jpg)
+## Oh Python mon beau Python !
 
-Plus simplement, vous pouvez également rechercher le terme : "**api key extension:php**" pour des idées de services avec des API potentiellement exposées.
+Il vous reste plus qu'à ouvrir JupyterLab et insérer le code suivant :
 
-**Mais de loin, les clés les plus faciles à trouver sont celles qui contiennent un mot, ou une suite logique, particulier dans la clé**. Ce n'est pas une blague... de nombreux services très respectés commettent erreur.
+    from matplotlib import pyplot as plt
+    import numpy as np
+    from matplotlib_venn import venn3, venn3_circles
+    plt.figure(figsize=(12,12)) # modifier la taille de l'image
+    plt.title("Pages Actives et Inactives") # modifier le title
+    v = venn3(subsets=(251, 8, 49, 1,226,3,634), set_labels = ('URL trouvées au crawl', 'URL trouvées dans les sitemaps', 'URL trouvées dans GA + GSC')) # insérez vos données - attention de bien respecter la structure
+    c=venn3_circles(subsets = (251, 8, 49, 1,226,3,634), linestyle='dashed', linewidth=1, color="grey") # petit bonus visuel
+    plt.show()
 
-Par exemple, Mailchimp à longtemps utilisé la chaîne : "usX", X étant un nombre compris entre 1 et 11.
+Pensez bien sur à insérer vos données d'URLs en prenant soin de respecter la structure.
 
-Github reconnait USX comme un mot, ce qui permet de rechercher US1 jusqu'à US11 et obtenir toutes les clés API de Mailchimp sur Github !
+Puis... RUN!
 
-Ce qui fait peur ? Ces clés API donnent un accès complet au compte Mailchimp, y compris à toutes les listes de courrier électronique, et la possibilité de leur envoyer des courriels de Mailchimp, qui proviennent du propriétaire du compte et sont du coups... payés par celui-ci.
+![](/uploads/dataviz-seo-pages-actives.png)
 
-## Les REGEX : la recherche bodybuildé si t'es énervé !
+Et vous voilà avec un jolie graphique tout frais.
 
-L'autre méthode de recherche de clés consiste à explorer Github et à rechercher des modèles à l'aide de RegEx.
+D'autres exemples :
 
-Par exemple, pour recherche des clés AWS, vous pouvez rechercher des chaînes d'une longueur de 20 caractères, toutes majuscules et alphanumériques, et commençant par AK.
+![](/uploads/dataviz-seo-pages-actives-2.png)
 
-C'est beaucoup plus facile que de pirater différentes implémentations et langues d'API.
+![](/uploads/dataviz-seo-pages-actives-3.png)
 
-Seul hic, GitHub limite son API, la meilleure méthode consiste donc à utiliser l'API uniquement afin d'obtenir une list ede référentiels, puis téléchargez les master.zip ou analysez les fichiers à l'aide d'un simple HTTP GET.
+La librairie matplotlib permet une personnalisation relativement complète, n'hésitez pas à explorer !
 
-## Petite conclusion
+Quelques autres graphiques sont disponible sur mon Gists : [https://gist.github.com/bKNN](https://gist.github.com/bKNN "https://gist.github.com/bKNN")
 
-J'ai décidé de rédiger cet article maintenant que GitHub propose gratuitement de passer son dépôt en privé, et ce de manière illimité. Cet technique risque donc d'être de plus en plus obsolète.
-
-Il y a un vrai problème de formation et d'incompétence pour que des développeurs soumettent toujours des clés secrètes à des référentiels publics, c'est un béaba qui devrait être un réflexe pour tous.
-
-TOUTEFOIS, pour toutes les sociétés qui conçoit et implémente ces API, là aussi, une forte réflexion pourrait être mener afin d'éviter ce risque potientiel :
-
-1 - Jamais, JAMAIS, une chaîne spécifique ne se répète dans toutes les clés (Coucou Mailchimp!). Et surtout, ne faites pas de cette chaîne un mot qui peut être recherché sans expression régulière.
-
-![](/uploads/hello-mailchimp.gif)
-
-Le mieux serait de faire varier la longueur de l'API de manière variable et d'envisager pourquoi pas l'utilisation de caractères spéciaux afin de rendre plus difficile encore la recherche par expressions rationnelles.
-
-2 - Obligez vos utilisateurs à ne pas utiliser le moyen facile de stocker la clé secrète juste avant l'appel de l'API, ni même de la stocker dans des fichiers de projet.
-
-Par exemple, le SDK AWS propose quelques bonnes idées:
-
-* stocker dans des variables
-* des fichiers INI sur le home directory
-
-J'espère que cet article vous responsabilisera et vous aidera à éviter ces risques de sécurité à l'avenir.
-
-Pour les autres... attention à l'utilisation que vous en faites !
+Toujours preneur de vos retours sur [Twitter](https://twitter.com/bKN____) !
 
 _XOXO!_
 
