@@ -2,7 +2,6 @@
 categories = []
 date = 2019-12-18T21:51:00Z
 description = ""
-draft = true
 location = "Bordeaux, FR"
 slug = "seo-determination-pages-utiles-inutiles"
 tags = []
