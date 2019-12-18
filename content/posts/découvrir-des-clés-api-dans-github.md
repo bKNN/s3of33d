@@ -5,7 +5,7 @@ description = ""
 location = "Bordeaux, FR"
 slug = "seo-determination-pages-utiles-inutiles"
 tags = []
-title = "Déterminez vos pages utiles et inutiles à l'aide de la dataviz"
+title = "Déterminez vos pages utiles et inutiles au SEO à l'aide de la dataviz"
 type = "post"
 
 +++
