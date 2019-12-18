@@ -1,12 +1,12 @@
 +++
 categories = []
-date = 2019-07-23T22:00:00Z
+date = 2019-12-18T21:51:00Z
 description = ""
 draft = true
 location = "Bordeaux, FR"
-slug = "merci-github-pour-les-cles"
+slug = "seo-determination-pages-utiles-inutiles"
 tags = []
-title = "Découvrir des clés API dans GitHub"
+title = "Déterminez vos pages utiles et inutiles à l'aide de la dataviz"
 type = "post"
 
 +++
