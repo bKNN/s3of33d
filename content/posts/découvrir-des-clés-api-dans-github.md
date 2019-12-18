@@ -1,6 +1,6 @@
 +++
 categories = []
-date = 2019-12-18T21:51:00Z
+date = 2019-12-17T23:00:00Z
 description = ""
 location = "Bordeaux, FR"
 slug = "seo-determination-pages-utiles-inutiles"
